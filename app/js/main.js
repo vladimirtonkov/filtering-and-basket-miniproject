@@ -10,6 +10,7 @@ const InfoProduct = document.querySelector('.store__block')
 let arr = []
 let sumGoods = 0
 
+
 ButtonsProducts.forEach(btn => btn.addEventListener('click', (event) => {
   // let name = event.target.textContent.toLowerCase()
   let name = event.target.dataset.btn.toLowerCase()
@@ -57,9 +58,9 @@ function ShowAllItems() {
 }
 
 
+// ---- Все Работает, но можно еще протестировать --- /
+//      что-то - изменить
 
-
-// ---- Работает, но можно еще протестировать ---
 DataInput.addEventListener('input' , (event) => {
   let text = event.target.value
 
@@ -88,9 +89,6 @@ DataInput.addEventListener('input' , (event) => {
 
 
 
-
-// Работает, но можно еще протестировать / 
-//      что-то - изменить
 search.addEventListener('click', () => {
   let Data = DataInput.value
 
@@ -168,8 +166,8 @@ BasketsButtons.forEach(busket => busket.addEventListener('click', () => {
 
 
 
-    // не до конца,  - await...
-    // удаляет нужный элемент, но
+    //   - await...
+    // удаляет нужный элемент , но
     // пока что не правильно считает конечную сумму
     minCount = minCount - Number(minCurrPrice)
     currentDelElement.remove()

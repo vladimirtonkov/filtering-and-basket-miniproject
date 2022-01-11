@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+<body>
+
+  <section class="store">
+    <div class="container">
+      <h2 class="store__title">
+        Our
+        <span>Store</span>
+      </h2>
+      <ul class="store__filters">
+        <li class="store__item">
+          <button class="store__item-btn" data-btn="all">All</button>
+        </li>
+        <li class="store__item">
+          <button class="store__item-btn" data-btn="Cake">Cakes</button>
+        </li>
+        <li class="store__item">
+          <button class="store__item-btn" data-btn="Cupcake">Cupcakes</button>
+        </li>
+        <li class="store__item">
+          <button class="store__item-btn" data-btn="Sweet">Sweets</button>
+        </li>
+        <li class="store__item">
+          <button class="store__item-btn" data-btn="Doughnut">Doughnuts</button>
+        </li>
+      </ul>
+      <div class="store__search">
+        <div class="store__search-wrap">
+          <img class="store__search-img" src="images/search.png" alt="">
+        </div>
+        <input class="store__search-input" type="text" placeholder="Item...">
+      </div>
+        <ul class="store__products">
+          <li class="store__product" data-nameItem="Sweet">
+            <img class="store__product-img" src="images/cake-1.jpeg" alt="">
+            <div class="store__product-basket">
+              <img class="store__basket-img" src="images/basket.png" alt="">
+            </div>
+            <div class="store__product-info">
+              <span class="store__product-name">Sweet Item</span>
+              <span class="store__product-price">$ <span>5</span></span>
+            </div>
+          </li>
+          <li class="store__product" data-nameItem="Cupcake">
+            <img class="store__product-img" src="images/cupcake-1.jpeg" alt="">
+            <div class="store__product-basket">
+              <img class="store__basket-img" src="images/basket.png" alt="">
+            </div>
+            <div class="store__product-info">
+              <span class="store__product-name">Cupcake Item</span>
+              <span class="store__product-price">$ <span>24</span></span>
+            </div>
+          </li>
+          <li class="store__product" data-nameItem="Cake">
+            <img class="store__product-img" src="images/doughnut-1.jpeg" alt="">
+            <div class="store__product-basket">
+              <img class="store__basket-img" src="images/basket.png" alt="">
+            </div>
+            <div class="store__product-info">
+              <span class="store__product-name">Cake Item</span>
+              <span class="store__product-price">$ <span>7</span></span>
+            </div>
+          </li>
+          <li class="store__product" data-nameItem="Doughnut">
+            <img class="store__product-img" src="images/sweets-1.jpeg" alt="">
+            <div class="store__product-basket">
+              <img class="store__basket-img" src="images/basket.png" alt="">
+            </div>
+            <div class="store__product-info">
+              <span class="store__product-name">Doughnut Item</span>
+              <span class="store__product-price">$ <span>9</span></span>
+            </div>
+          </li>
+          <li class="store__product" data-nameItem="Sweet">
+            <img class="store__product-img" src="images/cake-2.jpeg" alt="">
+            <div class="store__product-basket">
+              <img class="store__basket-img" src="images/basket.png" alt="">
+            </div>
+            <div class="store__product-info">
+              <span class="store__product-name">Sweet Item</span>
+              <span class="store__product-price">$ <span>1</span></span>
+            </div>
+          </li>
+          <li class="store__product" data-nameItem="Cupcake">
+            <img class="store__product-img" src="images/cupcake-2.jpeg" alt="">
+            <div class="store__product-basket">
+              <img class="store__basket-img" src="images/basket.png" alt="">
+            </div>
+            <div class="store__product-info">
+              <span class="store__product-name">Cupcake Item</span>
+              <span class="store__product-price">$ <span>352</span></span>
+            </div>
+          </li>
+        </ul>
+        
+        <div class="store__block">
+          <section class="store__block-notProduct">
+              Данного товара нет в наличии
+          </section>
+        </div>
+
+    </div>
+  </section>
+
+
+<div class="content">
+  <div class="basket">
+    <span class="basket__title">Временная корзина</span>
+    <div class="basket__number-goods">Товаров: <div class="number">0</div></div>
+    <ul class="basket__items">
+
+    </ul>
+    <div class="basket__count">Общая сумма: <span>0</span></div>
+  </div>
+</div>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
